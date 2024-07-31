@@ -1,19 +1,14 @@
-# __manifest__.py
 {
-    'name': 'Product Move Document Links',
+    'name': 'Product Move Links',
     'version': '1.0',
+    'summary': 'Agrega enlaces a documentos relacionados en la vista tipo árbol de movimientos de producto',
     'category': 'Inventory',
-    'summary': 'Adds direct links to related documents in product moves',
-    'description': """
-    This module allows users to click on links within product move records to directly access related documents such as purchase orders and sales orders.
-    """,
     'author': 'Lautaro De Angelis',
-    'website': ' ',
-    'depends': ['stock'],
+    'website': 'https://www.tuempresa.com',
+    'depends': ['stock', 'purchase', 'sale'],
     'data': [
         'views/product_move_view.xml',
     ],
     'installable': True,
     'application': False,
-    'auto_install': False,
 }
